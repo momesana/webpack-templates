@@ -1,3 +1,4 @@
+/* eslint-env node */
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";

@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --mode production",
+    "lint": "eslint --max-warnings=0 . --ext js,mjs,jsx,ts,tsx",
     "format": "prettier --write ."
   },
   "keywords": [],
@@ -17,8 +18,12 @@
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-typescript": "^7.16.7",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.6.2",
     "style-loader": "^3.3.1",
