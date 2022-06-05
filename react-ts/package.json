@@ -8,7 +8,9 @@
     "dev": "webpack serve",
     "build": "webpack --mode production",
     "lint": "eslint . --max-warnings=0 --ext js,mjs,jsx,ts,tsx",
-    "format": "prettier --write ."
+    "typecheck": "tsc --project ./tsconfig.json",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "keywords": [],
   "author": "",

@@ -1,3 +1,7 @@
 import "./index.css";
-const root = document.getElementById("root");
-root.innerHTML = "<h1>Hello World</h1>";
+const containerId = "root";
+const container = document.getElementById(containerId);
+if (!container) {
+  throw Error(`couldn't find element with id ${containerId}!`);
+}
+container.innerHTML = "<h1>Hello World</h1>";
