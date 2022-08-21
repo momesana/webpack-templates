@@ -1,14 +1,13 @@
 /* eslint-env node */
-import { dirname, resolve } from "path";
-import { fileURLToPath } from "url";
+import {dirname, resolve} from "path";
+import {fileURLToPath} from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-function webpackConfig(_env, { mode }) {
+function webpackConfig(_env, { mode = "development" }) {
   const isDevelopment = mode === "development";
-  console.log(mode);
 
   return {
     mode,

@@ -6,7 +6,7 @@ import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-function webpackConfig(_env, { mode }) {
+function webpackConfig(_env, { mode = "development" }) {
   const isDevelopment = mode === "development";
   return {
     mode,
