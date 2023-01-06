@@ -1,5 +1,5 @@
+import { lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import { lazy } from "react";
 
 const App = lazy(() => import("./App"));
 const containerId = "root";
@@ -8,4 +8,8 @@ if (!container) {
   throw Error(`couldn't find element with id ${containerId}!`);
 }
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+  <Suspense fallback="loading">
+    <App />
+  </Suspense>
+);
