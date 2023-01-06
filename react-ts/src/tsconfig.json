@@ -1,4 +1,5 @@
 {
+  "include": ["*.ts", "*.tsx", ".eslintrc.cjs"],
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "jsx": "react-jsx"

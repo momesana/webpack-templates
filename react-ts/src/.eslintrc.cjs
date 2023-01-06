@@ -1,9 +1,12 @@
+/* eslint-env node */
+
 module.exports = {
   env: {
     browser: true,
     es2021: true,
   },
   extends: [
+    "../.eslintrc-typescript.cjs",
     "../.eslintrc.cjs",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
@@ -18,21 +21,10 @@ module.exports = {
     },
     ecmaVersion: "latest",
     sourceType: "module",
-    project: ["./tsconfig.json"],
+    project: ["./src/tsconfig.json"],
   },
   plugins: ["react", "react-hooks"],
   rules: {
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "error",
-    "react/no-unknown-property": [
-      "error",
-      {
-        ignore: ["css"],
-      },
-    ],
-    "react/prop-types": "error",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",

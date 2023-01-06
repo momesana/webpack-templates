@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --mode production",
-    "lint": "eslint . --max-warnings=0 --ext js,mjs,jsx,ts,tsx",
+    "lint": "eslint . --max-warnings=0 --ext js,cjs,mjs,ts,tsx",
     "typecheck": "tsc --project ./src/tsconfig.json",
     "format": "prettier --write .",
     "check-format": "prettier --check ."
