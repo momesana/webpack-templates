@@ -21,7 +21,30 @@ module.exports = {
     project: ["./tsconfig.json"],
   },
   plugins: ["react", "react-hooks"],
-  rules: {},
+  rules: {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/no-unknown-property": [
+      "error",
+      {
+        ignore: ["css"],
+      },
+    ],
+    "react/prop-types": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/no-unknown-property": [
+      "error",
+      {
+        ignore: ["css"],
+      },
+    ],
+    "react/prop-types": "error",
+  },
   settings: {
     react: {
       version: "detect",
