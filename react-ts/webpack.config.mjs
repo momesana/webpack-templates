@@ -1,6 +1,6 @@
 /* eslint-env node */
-import {dirname, resolve} from "path";
-import {fileURLToPath} from "url";
+import { dirname, resolve } from "path";
+import { fileURLToPath } from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
