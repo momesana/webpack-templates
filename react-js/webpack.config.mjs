@@ -34,6 +34,10 @@ function webpackConfig(_env, { mode = "development" }) {
             },
           ],
         },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
       ],
     },
     plugins: [
